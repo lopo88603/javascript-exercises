@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startupistan Records</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 72rem; margin: 0 auto; padding: 2rem; color: #06302a; }
+      .tagline { color: #555; }
+      .highlight { background-color: #ccebe4; padding: 0.2rem 0.5rem; border-radius: 0.4rem; }
+      .shuffle { background: #00a088; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 0.5rem; cursor: pointer; }
+      .featured { font-weight: 600; min-height: 1.5rem; }
+      .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 1rem; margin-top: 1rem; }
+      .cards article { border: 1px solid #d8e4e1; border-radius: 0.7rem; padding: 1rem; }
+      .cards h3 { margin: 0 0 0.4rem; }
+      .cards p { margin: 0; color: #555; }
+      .signup { margin-top: 2rem; display: flex; gap: 0.6rem; align-items: end; }
+      .signup label { display: block; font-size: 0.85rem; margin-bottom: 0.25rem; }
+      .signup input { padding: 0.5rem; border: 1px solid #c9d4de; border-radius: 0.4rem; }
+      .signup button { background: #06302a; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 0.5rem; cursor: pointer; }
+    </style>
+    <script src="lesson-09.js" defer></script>
+  </head>
+  <body>
+    <h1>My Label</h1>
+    <p class="tagline">New music, honest volume.</p>
+    <button class="shuffle">Feature a random artist</button>
+    <p class="featured"></p>
+    <section class="cards"></section>
+    <form class="signup">
+      <div>
+        <label for="artist-name">New artist name</label>
+        <input type="text" id="artist-name" name="artist-name" />
+      </div>
+      <button type="submit">Add artist</button>
+    </form>
+  </body>
+</html>
